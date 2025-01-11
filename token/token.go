@@ -22,4 +22,12 @@ const (
 	INT    = "INT"
 	BOOL   = "BOOL"
 	STRING = "STRING"
+
+	TRUE  = "TRUE"
+	FALSE = "FALSE"
 )
+
+var Keywords = map[string]TokenType{
+	"true":  BOOL,
+	"false": BOOL,
+}
