@@ -18,10 +18,25 @@ func main() {
 		"IsAlive": true,
 		"ScoreInt" : [1,2,3],
 		"ScoreBool" : [false, false, true],
+		"Scorelist" : [[1,2,3], [23,3]],
 		"Scorestr" : ["ma", "sco", "sec"],
+		"address" : {
+				"city" : "Mumbai",
+				"state" : "Maharashtra"
+			}
 		}
 
 	 `
+	// data := `{
+	// 		"addr" : {
+	// 			"city" : "Mumbai",
+	// 			"state" : "Maharashtra"
+	// 		}
+	// 	}`
+	// data := `{
+	// 	"score": [[1], [2], [3], [4]]
+	// }`
+	// "Scorelistlist" : [[[1,2],[3]], [[23,3]]],
 	lex := lexer.New(data)
 	par := parser.New(lex)
 
